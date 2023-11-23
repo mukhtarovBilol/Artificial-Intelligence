@@ -1,0 +1,41 @@
+.our__clients {
+    padding: 170px 0;
+
+    & .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &-title {
+        max-width: 548px;
+        width: 100%;
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    &-txt {
+        max-width: 460px;
+        width: 100%;
+        color: #fff;
+        opacity: 0.7;
+        margin-bottom: 20px;
+    }
+
+    &-png {
+        max-width: 550px;
+        width: 100%;
+        transition: 0.8s;
+    }
+
+    &-png:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:360px) {
+    .our__clients-title {
+        font-size: 30px;
+    }
+}

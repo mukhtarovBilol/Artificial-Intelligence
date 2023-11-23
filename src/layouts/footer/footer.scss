@@ -1,0 +1,134 @@
+.footer {
+    background: rgb(1, 1, 27);
+    padding: 77px 0 130px 0;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9px;
+        gap: 7px;
+        color: #3A68B8;
+    }
+
+    &__img {
+        max-width: 40px;
+        width: 100%;
+    }
+
+    &__txt {
+        max-width: 261px;
+        width: 100%;
+        color: #fff;
+        opacity: 0.7;
+        font-size: 14px;
+        margin-bottom: 37px;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    &__menu {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__link {
+        color: #fff;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+
+    &__about {
+
+        &-txt {
+            max-width: 261px;
+            width: 100%;
+            color: #fff;
+            opacity: 0.7;
+            margin-bottom: 29px;
+            font-size: 14px;
+        }
+
+        &-link {
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    &__company {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    &__socials {
+        max-width: 170px;
+        width: 100%;
+        margin-bottom: 58px;
+    }
+
+    &__language {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        cursor: pointer;
+
+        &-txt {
+            color: #fff;
+        }
+
+        &-vector {
+            width: 10px;
+            height: 5px;
+        }
+    }
+
+    & span {
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 10px;
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+        background: #fff;
+        width: 100%;
+        padding: 3px;
+        transition: 0.4s;
+    }
+
+    & span.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__more {
+        margin-bottom: 7px;
+        text-align: center;
+        transition: 0.4s;
+
+        &:hover {
+            color: #3A68B8;
+        }
+    }
+
+}

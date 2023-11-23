@@ -1,0 +1,27 @@
+@import "fonts.scss";
+@import "common.scss";
+
+// nav
+@import "@/layouts/nav/navVue.scss" ;
+// nav
+
+// header
+@import "@/layouts/header/headervue.scss";
+// header
+
+// about
+@import "@/views/about/aboutVue.scss";
+// about
+
+// swiper
+@import "@/views/swiper/swiperVue.scss";
+// swiper
+
+// ourClients
+@import "@/views/ourClients/ourClients.scss";
+// ourClients
+
+// footer
+@import "@/layouts/footer/footer.scss"
+// footer
+

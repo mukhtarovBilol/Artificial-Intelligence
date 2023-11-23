@@ -1,0 +1,129 @@
+.header {
+    background: rgb(1, 1, 27);
+    padding: 10px 0 90px 0;
+
+    &__banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    &__png {
+        max-width: 550px;
+        width: 100%;
+        transition: 0.9s;
+    }
+
+    &__png:hover {
+        transform: scale(1.1);
+    }
+
+    &__txt {
+        font-size: 18px;
+        color: #3a68b8;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        max-width: 604px;
+        width: 100%;
+        color: #fff;
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        max-width: 558px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 160%;
+        color: #fff;
+        opacity: 0.7;
+        margin-bottom: 50px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 20px;
+    }
+
+    &__video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px 30px;
+        color: #fff;
+        border-radius: 5px;
+        background: #3a68b8;
+
+        &-image {
+            width: 16px;
+            transition: 0.7s;
+        }
+
+        &:hover {
+            box-shadow: 5px 5px 13px 5px #191970;
+        }
+
+        &:hover &-image {
+            transform: scale(1.2);
+        }
+    }
+
+    &__link2 {
+        color: #fff;
+    }
+
+    &__image {
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 89px;
+    }
+
+    &__company {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+
+        &-png {
+            padding: 10px;
+            transition: 0.7s;
+            border-radius: 15px;
+        }
+
+        &-image:hover &-png {
+            background: #964b00;
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 636px) {
+    .header__png {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .header__company {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__links {
+        justify-content: center;
+    }
+
+    .header__title {
+        font-size: 45px;
+    }
+}
